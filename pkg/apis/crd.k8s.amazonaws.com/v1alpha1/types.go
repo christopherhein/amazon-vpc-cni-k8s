@@ -12,6 +12,7 @@ type ENIConfigList struct {
 	Items           []ENIConfig `json:"items"`
 }
 
+// +genclient
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 type ENIConfig struct {
